@@ -1,0 +1,63 @@
+{
+    "projectOwner": "Group5",
+    "projectName": "GasLeakDetector",
+    "lastUpdate": "2025-05-11 19:12:34.451739",
+    "broker": {
+        "IP": "mqtt.eclipseprojects.io",
+        "port": 1883
+    },
+    "admin": {
+        "username": "admin",
+        "password": "12345"
+    },
+    "buildings": [
+        {
+            "houseID": "house_01",
+            "location": {
+                "Address": "Street 1",
+                "Number": "1",
+                "CAP": "10100"
+            },
+            "devices": [
+                {
+                    "deviceID": 101,
+                    "deviceName": "GasSensor101",
+                    "deviceStatus": "On",
+                    "measureType": [
+                        "Gas"
+                    ],
+                    "min_threshold": 10,
+                    "max_threshold": 80,
+                    "services": {
+                        "MQTT": {
+                            "topic": "gasDetector/sensor/gas/101"
+                        }
+                    }
+                },
+                {
+                    "deviceID": 201,
+                    "deviceName": "GasValve201",
+                    "deviceStatus": "On",
+                    "measureType": [
+                        "Actuator"
+                    ],
+                    "services": {
+                        "REST": {
+                            "uri": "http://127.0.0.1:8084/device_status"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "botConfig": {
+        "TELEGRAM_BOT_TOKEN": "8085398972:AAHjieirXHk5zqtOvhXCqHZn-mnHlAKvpJg",
+        "TELEGRAM_CHAT_ID": 43961758,
+        "CATALOG_URL": "http://127.0.0.1:8080",
+        "VALVE_API_URL": "http://127.0.0.1:8084/device_status",
+        "THINGSPEAK_READ_URL": "https://api.thingspeak.com/channels/2946534/fields/1/last.json?api_key=P9M1YY4A0XANJZIP",
+        "MQTT_BROKER": "mqtt.eclipseprojects.io",
+        "MQTT_PORT": 1883,
+        "MQTT_ALERT_TOPIC": "gasDetector/alert/gas"
+    }
+}
