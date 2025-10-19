@@ -3,6 +3,7 @@ import json
 import time
 from MyMQTT import MyMQTT
 
+
 with open("catalog.json") as f:
     catalog_data = json.load(f)
     bot_config = catalog_data.get("botConfig", {})
