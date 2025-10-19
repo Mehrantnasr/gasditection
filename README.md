@@ -132,7 +132,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Authors
 
-- **Group5** – Project Owner and Development Team
+- **G5_Mehran_Kamran_Keyvan_Erfan_Pezhman** – Project Owner and Development Team
 
 ---
 
