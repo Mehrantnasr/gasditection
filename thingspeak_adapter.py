@@ -2,6 +2,7 @@ import json
 import paho.mqtt.client as mqtt
 import requests
 
+
 MQTT_BROKER = "mqtt.eclipseprojects.io"
 MQTT_PORT = 1883
 MQTT_TOPIC = "gasDetector/sensor/gas/#"
