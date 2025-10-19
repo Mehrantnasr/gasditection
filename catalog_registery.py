@@ -2,6 +2,7 @@ import cherrypy
 import json
 import datetime
 
+
 class CatalogRegistry:
     exposed = True
 
