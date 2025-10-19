@@ -3,6 +3,7 @@ import random
 import json
 from MyMQTT import MyMQTT
 
+
 class GasSensorPublisher:
     def __init__(self, sensor_id, topic, broker, port):
         self.sensor_id = sensor_id
