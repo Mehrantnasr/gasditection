@@ -1,5 +1,6 @@
 # GasLeakDetector
 
+
 An IoT-based gas leak detection system that monitors gas sensor readings, forwards data to ThingSpeak for visualization, manages device configurations via a RESTful catalog, and provides real-time alerts through MQTT and Telegram.
 
 ---
